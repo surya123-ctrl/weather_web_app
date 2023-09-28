@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #292c35;
+  color: white;
+}
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-container input {
+  border: 1px solid #ccc;
+  outline: 0;
+  background: #dde6ed;
+  color: #555;
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 12px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+/* .search-container input:focus { */
+/* background: rgb(42, 40, 40); */
+/* background: black; */
+/* color: white; */
+/* } */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+#weather-container {
+  width: max-content;
+  /* border: 1px solid black; */
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+  /* border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px; */
+}
+.temperature {
+  font-size: 90px;
+  font-weight: 400;
+}
+.City {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: -10px;
+  color: #ff6a00;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 5px;
+}
+.column {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.unit-toggle {
+  border: none;
+}
+.humidity,
+.wind-speed {
+  color: #ff6a00;
+  width: max-content;
+}
+label,
+select {
+  font-size: 12px;
+  height: 40px;
+  outline: none;
+  border: 0;
+}
+select {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.icon {
+  margin-left: -38px;
+  margin-right: 8px;
+}
+#error {
+  color: black;
+}
+.toast-body {
+  border: 1px solid red;
+  background-color: rgb(244, 59, 59);
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.text-danger {
+  color: red;
+}
+@media screen and (max-width: 550px) {
+  .card {
+    border: none;
+  }
+  .temperature {
+    font-size: 45px;
+  }
+  .City {
+    font-size: 30px;
+  }
+  .details {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-container {
+    display: block;
+    text-align: center;
+  }
+  #getWeatherButton {
+    margin-top: 5px;
+  }
+  .details {
+    display: block;
+    padding: 0;
+  }
+  .column {
+    padding: 20px;
+    margin-left: 20%;
+  }
+  .unit-toggle {
+    margin-left: -22%;
+  }
+  #weather-container {
+    margin-top: -8px;
+  }
+}
+@media screen and (max-width: 310px) {
+  #getWeatherButton {
+    width: max-content;
+  }
+  .unit-toggle {
+    margin-left: -22%;
+  }
+}
