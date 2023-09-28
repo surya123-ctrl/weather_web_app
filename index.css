@@ -154,12 +154,21 @@ select {
   }
   .temperature {
     font-size: 45px;
+    margin-bottom: 30px;
   }
   .City {
     font-size: 30px;
+    margin-bottom: 30px;
   }
   .details {
     display: block;
+  }
+  .description {
+    margin-bottom: 50px;
+  }
+  .column {
+    margin-bottom: 30px;
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -167,9 +176,9 @@ select {
     display: block;
     text-align: center;
   }
-  #getWeatherButton {
+  /* #getWeatherButton {
     margin-top: 5px;
-  }
+  } */
   .details {
     display: block;
     padding: 0;
@@ -177,13 +186,14 @@ select {
   .column {
     padding: 20px;
     margin-left: 20%;
+    margin-bottom: 25px;
   }
   .unit-toggle {
     margin-left: -22%;
   }
-  #weather-container {
+  /* #weather-container {
     margin-top: -8px;
-  }
+  } */
 }
 @media screen and (max-width: 310px) {
   #getWeatherButton {

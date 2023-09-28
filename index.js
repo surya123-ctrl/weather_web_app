@@ -34,7 +34,7 @@ function displayWeather(data) {
     weatherContainer.innerHTML = `
         <h1 class="temperature">${temperature}</h1>
         <h2 class="City">${city}</h2>
-        <h2>${description.charAt(0).toUpperCase() + description.slice(1)}</h2>
+        <h2 class="description">${description.charAt(0).toUpperCase() + description.slice(1)}</h2>
         <div class="details">
         <div class="column">
             <div>
